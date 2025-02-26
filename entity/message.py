@@ -22,9 +22,9 @@ class Header:
 
 
 class MessageType(Enum):
-    SEND_FIRST = 0
-    SEND_SECOND = 1
-    BROADCAST = 2
+    SEND_FIRST = 1
+    SEND_SECOND = 2
+    BROADCAST = 3
 
 
 @dataclass

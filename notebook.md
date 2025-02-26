@@ -34,3 +34,6 @@
         - Broadcast
     - Timestamp (logical clock).
 - Payload is unnecessary but we can include it.
+
+- Have the client use a `queue.Queue()` object to store received messages.
+- Worker thread will sleep 
