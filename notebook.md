@@ -9,8 +9,8 @@
 ### Process Structuring
 
 - Star topology vs. $K_3$?
-    - Star would be much simpler, but communication would be constrained to central node.
-    - $K_3$ would low direct messaging between hosts, but more complex for each host to maintain.
+    - Star would be simpler, but communication would be constrained to central node.
+    - $K_3$ would allow direct messaging between hosts, but more complex for each host to maintain.
         - It is more **P2P**, not entirely sure how they would "discover" each other.
     - Star should be fine because we don't care that much about network throughput in this design exercise.
 
@@ -23,7 +23,7 @@
 
 ## 2/26
 
-### Implementation
+### Message Type
 
 - Using `dataclass` to represent our messages.
 - Messages need at the very least a few things:
@@ -35,5 +35,18 @@
     - Timestamp (logical clock).
 - Payload is unnecessary but we can include it.
 
-- Have the client use a `queue.Queue()` object to store received messages.
-- Worker thread will sleep 
+### Client Structure
+
+- Have the client use a `queue.Queue()` network queue to store received messages.
+- Listener thread will receive any messages and place them on the network queue.
+- Worker thread will sleep for $\frac{1}{\text{clock speed}}$ seconds before polling the queue again.
+
+### Server Routing
+
+- Created an `enum` for the message type.
+- Server will receive message type.
+- Upon receiving a message, it will determine the host(s) to route the message to.
+- The list of possible host destinations is determined by **removing** the source address from the set of addresses.
+    - `SEND_ONE`: Send to the first (alphabetically sorted) host
+    - `SEND_SECOND`: send to the second host
+    - `BROADCAST`: sent to both hosts
