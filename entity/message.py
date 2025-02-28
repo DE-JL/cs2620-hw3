@@ -18,7 +18,8 @@ class Header:
 
     @staticmethod
     def unpack(data: bytes) -> "Header":
-        return Header(struct.unpack_from(Header.FORMAT, data)[0])
+        message_size = struct.unpack_from(Header.FORMAT, data)[0]
+        return Header(message_size=message_size)
 
 
 class MessageType(Enum):
@@ -31,7 +32,8 @@ class MessageType(Enum):
 class Message:
     source: str
     type: MessageType
-    timestamp: int
+    system_clock_time: float
+    logical_clock_time: int
     payload: str = field(default="")
 
     def pack(self) -> bytes:

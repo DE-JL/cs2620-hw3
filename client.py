@@ -1,9 +1,11 @@
+import argparse
 import queue
 import random
 import socket
 import threading
 import time
 
+from config import DEBUG
 from entity import Header, Message, MessageType
 
 
@@ -22,7 +24,7 @@ class Client:
         """
         # Clock speed
         self.clock_speed = random.randint(1, 6)
-        self.clock = 0
+        self.logical_clock = 0
 
         # Networking
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -31,17 +33,29 @@ class Client:
         client_ip, client_port = self.client_socket.getsockname()
         self.addr = f"{client_ip}:{client_port}"
 
+        print(f"Client {self.addr} connected to server at {server_host}:{server_port}.")
+        print(f"Client {self.addr} clock speed: {self.clock_speed} Hz")
+
         # Network message queue
         self.network_queue = queue.Queue()
 
         # Open the client log
-        self.log_file = open(f"client_{self.addr}.log", "a")
+        # self.log_file = open(f"client_{self.addr}.log", "a")
 
-        # Start the threads
+        # Initialize listener and worker thread
         self.listener_thread = threading.Thread(target=self.listener)
         self.worker_thread = threading.Thread(target=self.worker)
+        self.stop_event = threading.Event()
+
+    def run(self):
+        # Start the threads
         self.listener_thread.start()
         self.worker_thread.start()
+
+    def stop(self):
+        self.stop_event.set()
+        self.listener_thread.join()
+        self.worker_thread.join()
 
     def listener(self):
         """
@@ -52,12 +66,14 @@ class Client:
         
         :return: None
         """
-        while True:
+        while not self.stop_event.is_set():
             # Receive the header
-            recvd = self.client_socket.recv(Header.SIZE)
-            header = Header.unpack(recvd)
+            recvd = self.client_socket.recv(Header.SIZE, socket.MSG_WAITALL)
+            if not recvd or len(recvd) != Header.SIZE:
+                break
 
-            # Receive the message
+            # Unpack the header and receive the message
+            header = Header.unpack(recvd)
             recvd += self.client_socket.recv(header.message_size)
             message = Message.unpack(recvd)
 
@@ -78,7 +94,7 @@ class Client:
 
         :return: None
         """
-        while True:
+        while not self.stop_event.is_set():
             try:
                 message: Message = self.network_queue.get_nowait()
                 # TODO: process the event?
@@ -90,7 +106,8 @@ class Client:
                 if rand <= 3:
                     message = Message(source=self.addr,
                                       type=MessageType(rand),
-                                      timestamp=self.clock)
+                                      system_clock_time=time.time(),
+                                      logical_clock_time=self.logical_clock)
                     self.client_socket.sendall(message.pack())
 
                     self.log_send(message)
@@ -99,23 +116,40 @@ class Client:
 
             # Update the clock
             time.sleep(1 / self.clock_speed)
-            self.clock += 1
+            self.logical_clock += 1
 
     def log_recv(self, message: Message):
         # TODO
+        print("receiving")
         pass
 
     def log_send(self, message: Message):
         # TODO
+        print("sending")
         pass
 
     def log_internal(self):
         # TODO
+        print("internal")
         pass
 
 
 def main():
-    pass
+    parser = argparse.ArgumentParser(allow_abbrev=False, description="Client")
+    parser.add_argument("host", type=str, metavar='host', help="The host on which the server is running")
+    parser.add_argument("port", type=int, metavar='port', help="The port at which the server is listening")
+    args = parser.parse_args()
+
+    # Initialize the client
+    client = Client(args.host, args.port)
+    client.run()
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("Keyboard interrupt received; stopping service...")
+        client.stop()
 
 
 if __name__ == "__main__":
