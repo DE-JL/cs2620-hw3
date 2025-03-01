@@ -50,3 +50,15 @@
     - `SEND_ONE`: Send to the first (alphabetically sorted) host
     - `SEND_SECOND`: send to the second host
     - `BROADCAST`: sent to both hosts
+
+## 2/28
+
+- Connected the server and the client together
+- Tested that sends and broadcasts were working
+- Directed client output to log files
+- Made clients bind to a specific `addr:port` passed as command line arguments
+
+## 3/1
+
+- Fixed some bugs (forgot to update the logical clock when receiving a new message)
+- Added a `run.py` script to automate starting the server and clients
