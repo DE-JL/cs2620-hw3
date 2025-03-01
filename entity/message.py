@@ -26,7 +26,6 @@ class MessageType(Enum):
     SEND_FIRST = 1
     SEND_SECOND = 2
     BROADCAST = 3
-    INTERNAL = 4
 
 
 @dataclass

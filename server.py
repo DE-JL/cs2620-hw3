@@ -117,6 +117,7 @@ class Server:
         self.server_log.write(f"---------------- RECEIVED MESSAGE ----------------\n")
         self.server_log.write(f"{message}\n\n")
 
+        # Order the hosts lexicographically on their addresses
         other_hosts = sorted([host for host in self.host_to_ctx if host != message.source])
         if len(other_hosts) < Server.MIN_HOSTS - 1:
             return

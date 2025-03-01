@@ -100,12 +100,18 @@ class Client:
         """
         while not self.stop_event.is_set():
             try:
+                # Check if the message queue is nonempty
                 message: Message = self.network_queue.get_nowait()
+
+                # Update the logical clock
+                self.logical_clock = max(self.logical_clock, message.logical_clock_time)
+
                 self.log_recv(message)
 
             except queue.Empty:
                 rand = random.randint(1, 10)
                 if rand <= 3:
+                    # Generate a new message and send it to the server
                     message = Message(source=self.addr,
                                       type=MessageType(rand),
                                       system_clock_time=time.time(),
@@ -122,22 +128,23 @@ class Client:
 
     def log_recv(self, message: Message):
         self.client_log.write("---------------- RECEIVED MESSAGE ----------------\n")
-        self.client_log.write(f"{message}\n\n")
+        self.client_log.write(f"{message}\n")
+        self.client_log.write(f"Message queue size: {self.network_queue.qsize()}\n")
+        self.client_log.write(f"System clock time: {time.time()}\n")
+        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
         self.client_log.flush()
 
     def log_send(self, message: Message):
         self.client_log.write("---------------- SENT MESSAGE ----------------\n")
-        self.client_log.write(f"{message}\n\n")
+        self.client_log.write(f"{message}\n")
+        self.client_log.write(f"System clock time: {time.time()}\n")
+        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
         self.client_log.flush()
 
     def log_internal(self):
-        message = Message(source=self.addr,
-                          type=MessageType.INTERNAL,
-                          system_clock_time=time.time(),
-                          logical_clock_time=self.logical_clock)
-
         self.client_log.write("---------------- INTERNAL EVENT ----------------\n")
-        self.client_log.write(f"{message}\n\n")
+        self.client_log.write(f"System clock time: {time.time()}\n")
+        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
         self.client_log.flush()
 
 
