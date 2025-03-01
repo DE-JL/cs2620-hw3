@@ -1,4 +1,4 @@
 network:
-    localhost: localhost
+    server_addr: localhost
     server_port: 8000
 debug: true

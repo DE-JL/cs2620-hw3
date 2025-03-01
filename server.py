@@ -1,8 +1,9 @@
+import os
 import selectors
 import socket
 import types
 
-from config import DEBUG, LOCALHOST, SERVER_PORT
+from config import SERVER_ADDR, SERVER_PORT
 from entity import Header, Message, MessageType
 
 
@@ -21,11 +22,16 @@ class Server:
         # Initialize data structures for hosts
         self.host_to_ctx: dict[str, types.SimpleNamespace] = {}
 
-    def run(self, host: str, port: int):
+        # Create the log file
+        server_log_file_path = "logs/server.log"
+        os.makedirs(os.path.dirname(server_log_file_path), exist_ok=True)
+        self.server_log = open(server_log_file_path, "w")
+
+    def run(self, server_addr: str, server_port: int):
         # Bind and listen on <host:port>
-        self.server_socket.bind((host, port))
+        self.server_socket.bind((server_addr, server_port))
         self.server_socket.listen()
-        print(f"Server listening on {host}:{port}")
+        print(f"Server started at {server_addr}:{server_port}.")
 
         # Register the socket
         self.sel.register(self.server_socket, selectors.EVENT_READ, None)
@@ -41,6 +47,8 @@ class Server:
             print("Caught keyboard interrupt, exiting.")
         finally:
             self.sel.close()
+            self.server_socket.close()
+            self.server_log.close()
 
     def accept_wrapper(self, key: selectors.SelectorKey):
         """
@@ -53,7 +61,8 @@ class Server:
 
         # Accept the connection
         conn, addr = sock.accept()
-        print(f"Accepted client connection from: {addr}")
+        ip, port = addr
+        print(f"Accepted connection from {addr}.")
 
         # Set the connection to be non-blocking
         conn.setblocking(False)
@@ -61,7 +70,7 @@ class Server:
         # Store a context namespace for this particular connection
         ctx = types.SimpleNamespace(addr=addr, outbound=b"")
         self.sel.register(conn, selectors.EVENT_READ | selectors.EVENT_WRITE, data=ctx)
-        self.host_to_ctx[addr] = ctx
+        self.host_to_ctx[f"{ip}:{port}"] = ctx
 
     def service_connection(self, key: selectors.SelectorKey, mask: int):
         """
@@ -87,7 +96,7 @@ class Server:
                 # Close the connection
                 self.sel.unregister(sock)
                 sock.close()
-                print(f"Closed connection to {ctx.addr}")
+                print(f"Closed connection to {ctx.addr}.")
                 return
 
             # Unpack the header and receive the payload
@@ -105,11 +114,11 @@ class Server:
                 ctx.outbound = ctx.outbound[sent:]
 
     def handle_message(self, message: Message):
-        if DEBUG:
-            print(f"Received message: {message}")
+        self.server_log.write(f"---------------- RECEIVED MESSAGE ----------------\n")
+        self.server_log.write(f"{message}\n\n")
 
         other_hosts = sorted([host for host in self.host_to_ctx if host != message.source])
-        if len(other_hosts) < Server.MIN_HOSTS:
+        if len(other_hosts) < Server.MIN_HOSTS - 1:
             return
 
         match message.type:
@@ -129,18 +138,12 @@ class Server:
                     ctx.outbound += message.pack()
 
             case _:
-                raise ValueError(f"Invalid message type: {message.type}")
-
-    def log(self):
-        """Utility function that logs the state of the server."""
-        print("\n-------------------------------- SERVER STATE --------------------------------")
-        print(f"HOSTS: {self.host_to_ctx.keys()}")
-        print("------------------------------------------------------------------------------\n")
+                raise ValueError(f"Invalid message type: {message.type}.")
 
 
 def main():
     server = Server()
-    server.run(LOCALHOST, SERVER_PORT)
+    server.run(SERVER_ADDR, SERVER_PORT)
 
 
 if __name__ == "__main__":

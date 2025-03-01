@@ -1,11 +1,12 @@
 import argparse
+import os
 import queue
 import random
 import socket
 import threading
 import time
 
-from config import DEBUG
+from config import SERVER_ADDR, SERVER_PORT
 from entity import Header, Message, MessageType
 
 
@@ -15,7 +16,7 @@ class Client:
     processes incoming messages, and maintains its own logical clock.
     """
 
-    def __init__(self, server_host: str, server_port: int):
+    def __init__(self, client_addr: str, client_port: int):
         """
         This class initializes a networked client that connects to a server and operates 
         with a clock-based architecture. It sets up the required networking components,
@@ -26,21 +27,23 @@ class Client:
         self.clock_speed = random.randint(1, 6)
         self.logical_clock = 0
 
-        # Networking
+        # Bind and connect the client socket
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.client_socket.connect((server_host, server_port))
+        self.client_socket.bind((client_addr, client_port))
+        self.client_socket.connect((SERVER_ADDR, SERVER_PORT))
 
-        client_ip, client_port = self.client_socket.getsockname()
-        self.addr = f"{client_ip}:{client_port}"
-
-        print(f"Client {self.addr} connected to server at {server_host}:{server_port}.")
-        print(f"Client {self.addr} clock speed: {self.clock_speed} Hz")
+        # Determine the client address and port
+        addr, port = self.client_socket.getsockname()
+        self.addr = f"{addr}:{port}"
+        print(f"Client {self.addr} initialized with clock speed: {self.clock_speed} Hz.")
 
         # Network message queue
         self.network_queue = queue.Queue()
 
         # Open the client log
-        # self.log_file = open(f"client_{self.addr}.log", "a")
+        client_log_file_path = f"logs/client-{client_addr}-{client_port}.log"
+        os.makedirs(os.path.dirname(client_log_file_path), exist_ok=True)
+        self.client_log = open(client_log_file_path, "w")
 
         # Initialize listener and worker thread
         self.listener_thread = threading.Thread(target=self.listener)
@@ -70,6 +73,7 @@ class Client:
             # Receive the header
             recvd = self.client_socket.recv(Header.SIZE, socket.MSG_WAITALL)
             if not recvd or len(recvd) != Header.SIZE:
+                print(f"Client {self.addr} disconnected from server.")
                 break
 
             # Unpack the header and receive the message
@@ -97,8 +101,6 @@ class Client:
         while not self.stop_event.is_set():
             try:
                 message: Message = self.network_queue.get_nowait()
-                # TODO: process the event?
-
                 self.log_recv(message)
 
             except queue.Empty:
@@ -119,19 +121,24 @@ class Client:
             self.logical_clock += 1
 
     def log_recv(self, message: Message):
-        # TODO
-        print("receiving")
-        pass
+        self.client_log.write("---------------- RECEIVED MESSAGE ----------------\n")
+        self.client_log.write(f"{message}\n\n")
+        self.client_log.flush()
 
     def log_send(self, message: Message):
-        # TODO
-        print("sending")
-        pass
+        self.client_log.write("---------------- SENT MESSAGE ----------------\n")
+        self.client_log.write(f"{message}\n\n")
+        self.client_log.flush()
 
     def log_internal(self):
-        # TODO
-        print("internal")
-        pass
+        message = Message(source=self.addr,
+                          type=MessageType.INTERNAL,
+                          system_clock_time=time.time(),
+                          logical_clock_time=self.logical_clock)
+
+        self.client_log.write("---------------- INTERNAL EVENT ----------------\n")
+        self.client_log.write(f"{message}\n\n")
+        self.client_log.flush()
 
 
 def main():
