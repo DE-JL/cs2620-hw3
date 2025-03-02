@@ -16,7 +16,7 @@ class Client:
     processes incoming messages, and maintains its own logical clock.
     """
 
-    def __init__(self, client_addr: str, client_port: int):
+    def __init__(self, client_addr: str, client_port: int, clock_speed: int = None):
         """
         This class initializes a networked client that connects to a server and operates 
         with a clock-based architecture. It sets up the required networking components,
@@ -24,7 +24,10 @@ class Client:
         work based on those messages.
         """
         # Clock speed
-        self.clock_speed = random.randint(1, 6)
+        if clock_speed:
+            self.clock_speed = clock_speed
+        else:
+            self.clock_speed = random.randint(1, 6)
         self.logical_clock = 0
 
         # Bind and connect the client socket
@@ -146,16 +149,24 @@ class Client:
         self.client_log.write(f"System clock time: {time.time()}\n")
         self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
         self.client_log.flush()
+    
+
+def positive_int(value):
+    ivalue = int(value)
+    if ivalue <= 0:
+        raise argparse.ArgumentTypeError(f"Invalid clock speed: {value}. Must be a positive integer.")
+    return ivalue
 
 
 def main():
     parser = argparse.ArgumentParser(allow_abbrev=False, description="Client")
     parser.add_argument("host", type=str, metavar='host', help="The host on which the server is running")
     parser.add_argument("port", type=int, metavar='port', help="The port at which the server is listening")
+    parser.add_argument("--clock-speed", type=positive_int, metavar='clock_speed', default=None, help="The clock speed of the client (default: None)")
     args = parser.parse_args()
 
     # Initialize the client
-    client = Client(args.host, args.port)
+    client = Client(args.host, args.port, args.clock_speed)
     client.run()
 
     try:

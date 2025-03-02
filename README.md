@@ -66,6 +66,6 @@ This can be configured in `config/config.yaml`.
 
 ### Running the Client
 
-To start a client, open a new terminal and run `python server.py [CLIENT ADDRESS] [CLIENT PORT]`.
+To start a client, open a new terminal and run `python client.py [CLIENT ADDRESS] [CLIENT PORT]`.
 This will start a client process at `<CLIENT ADDRESS>:<CLIENT PORT>`.
 The client will connect to the server and begin sending messages.
