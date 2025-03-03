@@ -1,11 +1,9 @@
 import argparse
+import signal
 import subprocess
 import time
 import random
 import os
-
-
-from config import SERVER_ADDR, SERVER_PORT
 
 
 def start_server(exp_name):
@@ -20,7 +18,8 @@ def start_server(exp_name):
 def start_client(port, exp_name, clock_speed, prob_internal):
     """Start a client process with the given clock speed and experiment name."""
     return subprocess.Popen(
-        ["python", "client.py", "localhost", str(port), "--clock-speed", str(clock_speed), "--exp-name", exp_name, "--prob-internal", str(prob_internal)],
+        ["python", "client.py", "localhost", str(port), "--clock-speed", str(clock_speed), "--exp-name", exp_name,
+         "--prob-internal", str(prob_internal)],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
     )
@@ -76,13 +75,14 @@ def main():
 
     # write experiment config in logs/args.exp_name
     log_file_path = f"logs/{args.exp_name}/args.txt"
-    
+
     os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
     with open(log_file_path, "w") as f:
         f.write(str(args))
 
     # Start the clients
-    client_procs = [start_client(ports[idx], args.exp_name, speed, args.prob_internal) for idx, speed in enumerate(args.clock_speeds)]
+    client_procs = [start_client(ports[idx], args.exp_name, speed, args.prob_internal) for idx, speed in
+                    enumerate(args.clock_speeds)]
 
     try:
         print(f"Experiment '{args.exp_name}' running for {args.run_time} seconds...")
@@ -94,8 +94,7 @@ def main():
 
     # Terminate all clients
     for proc in client_procs:
-        proc.terminate()
-        proc.wait()
+        proc.send_signal(signal.SIGINT)
 
     # Terminate the server
     server_proc.terminate()

@@ -5,7 +5,7 @@ import socket
 import types
 
 from config import SERVER_ADDR, SERVER_PORT
-from entity import Header, Message, MessageType
+from entity import Header, Message
 
 
 class Server:
@@ -124,17 +124,17 @@ class Server:
             return
 
         match message.type:
-            case MessageType.SEND_FIRST:
+            case "SEND_FIRST":
                 destination = other_hosts[0]
                 ctx = self.host_to_ctx[destination]
                 ctx.outbound += message.pack()
 
-            case MessageType.SEND_SECOND:
+            case "SEND_SECOND":
                 destination = other_hosts[1]
                 ctx = self.host_to_ctx[destination]
                 ctx.outbound += message.pack()
 
-            case MessageType.BROADCAST:
+            case "BROADCAST":
                 for host in other_hosts:
                     ctx = self.host_to_ctx[host]
                     ctx.outbound += message.pack()
@@ -145,9 +145,9 @@ class Server:
 
 def main():
     parser = argparse.ArgumentParser(allow_abbrev=False, description="Server")
-    parser.add_argument("--exp-name", type=str, required=True,metavar='name', help="The name of the experiment")
+    parser.add_argument("--exp-name", type=str, required=True, metavar='name', help="The name of the experiment")
     args = parser.parse_args()
-    
+
     server = Server(args.exp_name)
     server.run(SERVER_ADDR, SERVER_PORT)
 

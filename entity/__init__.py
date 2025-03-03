@@ -1,1 +1,1 @@
-from .message import Header, Message, MessageType
+from .message import Header, Message

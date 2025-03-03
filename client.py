@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import queue
 import random
@@ -6,8 +7,19 @@ import socket
 import threading
 import time
 
+from pydantic import BaseModel
+from typing import Optional
+
 from config import SERVER_ADDR, SERVER_PORT
-from entity import Header, Message, MessageType
+from entity import Header, Message
+
+
+class Event(BaseModel):
+    event_type: str
+    system_clock_time: float
+    logical_clock_time: int
+    message_queue_size: Optional[int] = None
+    message: Optional[Message] = None
 
 
 class Client:
@@ -50,7 +62,7 @@ class Client:
         self.network_queue = queue.Queue()
 
         # Open the client log
-        client_log_file_path = f"logs/{exp_name}/client-{client_addr}-{client_port}.log"
+        client_log_file_path = f"logs/{exp_name}/client-{client_addr}-{client_port}.json"
         os.makedirs(os.path.dirname(client_log_file_path), exist_ok=True)
         self.client_log = open(client_log_file_path, "w")
 
@@ -58,6 +70,9 @@ class Client:
         self.listener_thread = threading.Thread(target=self.listener)
         self.worker_thread = threading.Thread(target=self.worker)
         self.stop_event = threading.Event()
+
+        # Events list
+        self.events: list[Event] = []
 
     def run(self):
         # Start the threads
@@ -68,6 +83,12 @@ class Client:
         self.stop_event.set()
         self.listener_thread.join()
         self.worker_thread.join()
+
+        # Take a dump
+        json.dump([event.model_dump() for event in self.events],
+                  self.client_log,
+                  indent=4)
+        self.client_log.close()
 
     def listener(self):
         """
@@ -124,9 +145,11 @@ class Client:
                 rand = random.random()
                 if rand >= self.prob_internal:
                     choice = random.randint(1, 3)
+                    message_types = ["SEND_FIRST", "SEND_SECOND", "BROADCAST"]
+
                     # Generate a new message and send it to the server
                     message = Message(source=self.addr,
-                                      type=MessageType(choice),
+                                      type=message_types[choice - 1],
                                       system_clock_time=time.time(),
                                       logical_clock_time=self.logical_clock)
                     self.client_socket.sendall(message.pack())
@@ -139,25 +162,22 @@ class Client:
             time.sleep(1 / self.clock_speed)
 
     def log_recv(self, message: Message):
-        self.client_log.write("---------------- RECEIVED MESSAGE ----------------\n")
-        self.client_log.write(f"{message}\n")
-        self.client_log.write(f"Message queue size: {self.network_queue.qsize()}\n")
-        self.client_log.write(f"System clock time: {time.time()}\n")
-        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
-        self.client_log.flush()
+        self.events.append(Event(event_type="RECEIVE",
+                                 system_clock_time=time.time(),
+                                 logical_clock_time=self.logical_clock,
+                                 message_queue_size=self.network_queue.qsize(),
+                                 message=message))
 
     def log_send(self, message: Message):
-        self.client_log.write("---------------- SENT MESSAGE ----------------\n")
-        self.client_log.write(f"{message}\n")
-        self.client_log.write(f"System clock time: {time.time()}\n")
-        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
-        self.client_log.flush()
+        self.events.append(Event(event_type="SEND",
+                                 system_clock_time=time.time(),
+                                 logical_clock_time=self.logical_clock,
+                                 message=message))
 
     def log_internal(self):
-        self.client_log.write("---------------- INTERNAL EVENT ----------------\n")
-        self.client_log.write(f"System clock time: {time.time()}\n")
-        self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
-        self.client_log.flush()
+        self.events.append(Event(event_type="INTERNAL",
+                                 system_clock_time=time.time(),
+                                 logical_clock_time=self.logical_clock))
 
 
 def positive_int(value):
