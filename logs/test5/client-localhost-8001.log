@@ -1,0 +1,653 @@
+---------------- SENT MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8001
+	system_clock_time=1741035807.1931598
+	logical_clock_time=1
+	payload=
+)
+System clock time: 1741035807.193486
+Logical clock time: 1
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035808.1985369
+Logical clock time: 2
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035808.539422
+	logical_clock_time=5
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035809.203532
+Logical clock time: 6
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035808.8770392
+	logical_clock_time=6
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035810.208417
+Logical clock time: 7
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035809.215462
+	logical_clock_time=8
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035811.213517
+Logical clock time: 9
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035810.56906
+	logical_clock_time=13
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035812.21843
+Logical clock time: 14
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035811.583273
+	logical_clock_time=16
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035813.219012
+Logical clock time: 17
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035812.921104
+	logical_clock_time=20
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035814.224104
+Logical clock time: 21
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035813.256435
+	logical_clock_time=21
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035815.226891
+Logical clock time: 22
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035814.617074
+	logical_clock_time=26
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035816.231969
+Logical clock time: 27
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035814.94237
+	logical_clock_time=27
+	payload=
+)
+Message queue size: 3
+System clock time: 1741035817.236914
+Logical clock time: 28
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035815.953022
+	logical_clock_time=30
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035818.240866
+Logical clock time: 31
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035816.6253052
+	logical_clock_time=32
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035819.2419798
+Logical clock time: 33
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035816.9638348
+	logical_clock_time=33
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035820.247055
+Logical clock time: 34
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035818.652191
+	logical_clock_time=39
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035821.252148
+Logical clock time: 40
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035819.997239
+	logical_clock_time=43
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035822.257257
+Logical clock time: 44
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035820.336303
+	logical_clock_time=44
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035823.262336
+Logical clock time: 45
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035822.026003
+	logical_clock_time=49
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035824.26635
+Logical clock time: 50
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035824.726173
+	logical_clock_time=59
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035825.266871
+Logical clock time: 60
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035826.2719371
+Logical clock time: 61
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035827.277023
+Logical clock time: 62
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035828.108787
+	logical_clock_time=69
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035828.2801962
+Logical clock time: 70
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035828.447196
+	logical_clock_time=70
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035829.2852612
+Logical clock time: 71
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035828.785005
+	logical_clock_time=71
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035830.290333
+Logical clock time: 72
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035830.810626
+	logical_clock_time=78
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035831.295391
+Logical clock time: 79
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035831.4821508
+	logical_clock_time=80
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035832.295928
+Logical clock time: 81
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035832.8310301
+	logical_clock_time=84
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035833.29842
+Logical clock time: 85
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035833.8451
+	logical_clock_time=88
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035834.303825
+Logical clock time: 89
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035834.85786
+	logical_clock_time=91
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035835.3088908
+Logical clock time: 92
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035835.534673
+	logical_clock_time=93
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035836.3138812
+Logical clock time: 94
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035836.198089
+	logical_clock_time=95
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035837.317596
+Logical clock time: 96
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035836.536534
+	logical_clock_time=96
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035838.322591
+Logical clock time: 97
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035838.897917
+	logical_clock_time=103
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035839.325871
+Logical clock time: 104
+
+---------------- SENT MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8001
+	system_clock_time=1741035840.328492
+	logical_clock_time=105
+	payload=
+)
+System clock time: 1741035840.328622
+Logical clock time: 105
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035841.3336692
+Logical clock time: 106
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035841.599503
+	logical_clock_time=112
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035842.337188
+Logical clock time: 113
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035841.937931
+	logical_clock_time=113
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035843.3422568
+Logical clock time: 114
+
+---------------- SENT MESSAGE ----------------
+Message(
+	type=MessageType.SEND_SECOND
+	source=127.0.0.1:8001
+	system_clock_time=1741035844.347307
+	logical_clock_time=115
+	payload=
+)
+System clock time: 1741035844.347359
+Logical clock time: 115
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035845.349731
+Logical clock time: 116
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035845.645155
+	logical_clock_time=125
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035846.355166
+Logical clock time: 126
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035845.665271
+	logical_clock_time=125
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035847.360223
+Logical clock time: 127
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035846.0022871
+	logical_clock_time=126
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035848.361967
+Logical clock time: 128
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035847.330986
+	logical_clock_time=130
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035849.3626812
+Logical clock time: 131
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035850.3675258
+Logical clock time: 132
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035850.732254
+	logical_clock_time=142
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035851.3726048
+Logical clock time: 143
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035851.070677
+	logical_clock_time=143
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035852.376381
+Logical clock time: 144
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035852.399387
+	logical_clock_time=147
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035853.37822
+Logical clock time: 148
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035854.085983
+	logical_clock_time=152
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035854.383312
+Logical clock time: 153
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035855.1006489
+	logical_clock_time=155
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035855.385213
+Logical clock time: 156
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035856.386529
+Logical clock time: 157
+
+---------------- INTERNAL EVENT ----------------
+System clock time: 1741035857.391587
+Logical clock time: 158
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035857.4459379
+	logical_clock_time=163
+	payload=
+)
+Message queue size: 0
+System clock time: 1741035858.392201
+Logical clock time: 164
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035858.498385
+	logical_clock_time=167
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035859.3972569
+Logical clock time: 168
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035859.171456
+	logical_clock_time=169
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035860.4023192
+Logical clock time: 170
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035859.504997
+	logical_clock_time=170
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035861.407393
+Logical clock time: 171
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8003
+	system_clock_time=1741035859.8413188
+	logical_clock_time=171
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035862.4092731
+Logical clock time: 172
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035860.819797
+	logical_clock_time=174
+	payload=
+)
+Message queue size: 1
+System clock time: 1741035863.4099069
+Logical clock time: 175
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8003
+	system_clock_time=1741035862.200883
+	logical_clock_time=179
+	payload=
+)
+Message queue size: 2
+System clock time: 1741035864.414968
+Logical clock time: 180
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.BROADCAST
+	source=127.0.0.1:8002
+	system_clock_time=1741035863.857769
+	logical_clock_time=184
+	payload=
+)
+Message queue size: 3
+System clock time: 1741035865.418565
+Logical clock time: 185
+
+---------------- RECEIVED MESSAGE ----------------
+Message(
+	type=MessageType.SEND_FIRST
+	source=127.0.0.1:8002
+	system_clock_time=1741035864.196246
+	logical_clock_time=185
+	payload=
+)
+Message queue size: 3
+System clock time: 1741035866.423616
+Logical clock time: 186
+

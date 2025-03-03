@@ -2,6 +2,7 @@ import argparse
 import subprocess
 import time
 import random
+import os
 
 
 from config import SERVER_ADDR, SERVER_PORT
@@ -72,6 +73,13 @@ def main():
     # Start the server
     server_proc = start_server(args.exp_name)
     time.sleep(2)  # Give the server some time to start
+
+    # write experiment config in logs/args.exp_name
+    log_file_path = f"logs/{args.exp_name}/args.txt"
+    
+    os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
+    with open(log_file_path, "w") as f:
+        f.write(str(args))
 
     # Start the clients
     client_procs = [start_client(ports[idx], args.exp_name, speed, args.prob_internal) for idx, speed in enumerate(args.clock_speeds)]
