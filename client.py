@@ -16,7 +16,12 @@ class Client:
     processes incoming messages, and maintains its own logical clock.
     """
 
-    def __init__(self, client_addr: str, client_port: int, prob_internal: float = 0.7, clock_speed: int = None, exp_name: str = None):
+    def __init__(self,
+                 client_addr: str,
+                 client_port: int,
+                 prob_internal: float = 0.7,
+                 clock_speed: int = None,
+                 exp_name: str = None):
         """
         This class initializes a networked client that connects to a server and operates 
         with a clock-based architecture. It sets up the required networking components,
@@ -107,12 +112,15 @@ class Client:
                 # Check if the message queue is nonempty
                 message: Message = self.network_queue.get_nowait()
 
-                # Update the logical clock
-                self.logical_clock = max(self.logical_clock, message.logical_clock_time)
+                # Update the logical clock with Lamport's rule
+                self.logical_clock = max(self.logical_clock, message.logical_clock_time) + 1
 
                 self.log_recv(message)
 
             except queue.Empty:
+                # Increment logical clock
+                self.logical_clock += 1
+
                 rand = random.random()
                 if rand >= self.prob_internal:
                     choice = random.randint(1, 3)
@@ -127,9 +135,8 @@ class Client:
                 else:
                     self.log_internal()
 
-            # Update the clock
+            # Simulate clock speed
             time.sleep(1 / self.clock_speed)
-            self.logical_clock += 1
 
     def log_recv(self, message: Message):
         self.client_log.write("---------------- RECEIVED MESSAGE ----------------\n")
@@ -151,7 +158,7 @@ class Client:
         self.client_log.write(f"System clock time: {time.time()}\n")
         self.client_log.write(f"Logical clock time: {self.logical_clock}\n\n")
         self.client_log.flush()
-    
+
 
 def positive_int(value):
     ivalue = int(value)
@@ -164,9 +171,21 @@ def main():
     parser = argparse.ArgumentParser(allow_abbrev=False, description="Client")
     parser.add_argument("host", type=str, metavar='host', help="The host on which the server is running")
     parser.add_argument("port", type=int, metavar='port', help="The port at which the server is listening")
-    parser.add_argument("--clock-speed", type=positive_int, metavar='clock_speed', default=None, help="The clock speed of the client (default: None)")
-    parser.add_argument("--exp-name", type=str, metavar='name', default=None, help="The name of the experiment (default: None)")
-    parser.add_argument("--prob-internal", type=float, metavar='prob-internal', default=0.7, help="The probability of sending an internal event (default: 0.1)")
+    parser.add_argument("--clock-speed",
+                        type=positive_int,
+                        metavar='clock_speed',
+                        default=None,
+                        help="The clock speed of the client (default: None)")
+    parser.add_argument("--exp-name",
+                        type=str,
+                        metavar='name',
+                        default=None,
+                        help="The name of the experiment (default: None)")
+    parser.add_argument("--prob-internal",
+                        type=float,
+                        metavar='prob-internal',
+                        default=0.7,
+                        help="The probability of sending an internal event (default: 0.1)")
     args = parser.parse_args()
 
     # Initialize the client
