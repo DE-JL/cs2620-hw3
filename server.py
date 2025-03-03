@@ -1,3 +1,4 @@
+import argparse
 import os
 import selectors
 import socket
@@ -12,7 +13,7 @@ class Server:
 
     MIN_HOSTS = 3
 
-    def __init__(self):
+    def __init__(self, exp_name: str):
         # Create server socket
         self.sel = selectors.DefaultSelector()
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -23,7 +24,7 @@ class Server:
         self.host_to_ctx: dict[str, types.SimpleNamespace] = {}
 
         # Create the log file
-        server_log_file_path = "logs/server.log"
+        server_log_file_path = f"logs/{exp_name}/server.log"
         os.makedirs(os.path.dirname(server_log_file_path), exist_ok=True)
         self.server_log = open(server_log_file_path, "w")
 
@@ -114,7 +115,7 @@ class Server:
                 ctx.outbound = ctx.outbound[sent:]
 
     def handle_message(self, message: Message):
-        self.server_log.write(f"---------------- RECEIVED MESSAGE ----------------\n")
+        self.server_log.write("---------------- RECEIVED MESSAGE ----------------\n")
         self.server_log.write(f"{message}\n\n")
 
         # Order the hosts lexicographically on their addresses
@@ -143,7 +144,11 @@ class Server:
 
 
 def main():
-    server = Server()
+    parser = argparse.ArgumentParser(allow_abbrev=False, description="Server")
+    parser.add_argument("--exp-name", type=str, required=True,metavar='name', help="The name of the experiment")
+    args = parser.parse_args()
+    
+    server = Server(args.exp_name)
     server.run(SERVER_ADDR, SERVER_PORT)
 
 

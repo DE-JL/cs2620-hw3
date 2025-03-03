@@ -16,7 +16,7 @@ class Client:
     processes incoming messages, and maintains its own logical clock.
     """
 
-    def __init__(self, client_addr: str, client_port: int, clock_speed: int = None):
+    def __init__(self, client_addr: str, client_port: int, prob_internal: float = 0.7, clock_speed: int = None, exp_name: str = None):
         """
         This class initializes a networked client that connects to a server and operates 
         with a clock-based architecture. It sets up the required networking components,
@@ -29,6 +29,7 @@ class Client:
         else:
             self.clock_speed = random.randint(1, 6)
         self.logical_clock = 0
+        self.prob_internal = prob_internal
 
         # Bind and connect the client socket
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -44,7 +45,7 @@ class Client:
         self.network_queue = queue.Queue()
 
         # Open the client log
-        client_log_file_path = f"logs/client-{client_addr}-{client_port}.log"
+        client_log_file_path = f"logs/{exp_name}/client-{client_addr}-{client_port}.log"
         os.makedirs(os.path.dirname(client_log_file_path), exist_ok=True)
         self.client_log = open(client_log_file_path, "w")
 
@@ -112,11 +113,12 @@ class Client:
                 self.log_recv(message)
 
             except queue.Empty:
-                rand = random.randint(1, 10)
-                if rand <= 3:
+                rand = random.random()
+                if rand >= self.prob_internal:
+                    choice = random.randint(1, 3)
                     # Generate a new message and send it to the server
                     message = Message(source=self.addr,
-                                      type=MessageType(rand),
+                                      type=MessageType(choice),
                                       system_clock_time=time.time(),
                                       logical_clock_time=self.logical_clock)
                     self.client_socket.sendall(message.pack())
@@ -163,10 +165,12 @@ def main():
     parser.add_argument("host", type=str, metavar='host', help="The host on which the server is running")
     parser.add_argument("port", type=int, metavar='port', help="The port at which the server is listening")
     parser.add_argument("--clock-speed", type=positive_int, metavar='clock_speed', default=None, help="The clock speed of the client (default: None)")
+    parser.add_argument("--exp-name", type=str, metavar='name', default=None, help="The name of the experiment (default: None)")
+    parser.add_argument("--prob-internal", type=float, metavar='prob-internal', default=0.7, help="The probability of sending an internal event (default: 0.1)")
     args = parser.parse_args()
 
     # Initialize the client
-    client = Client(args.host, args.port, args.clock_speed)
+    client = Client(args.host, args.port, args.prob_internal, args.clock_speed, args.exp_name)
     client.run()
 
     try:
