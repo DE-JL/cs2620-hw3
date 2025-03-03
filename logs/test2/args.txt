@@ -1,1 +1,0 @@
-Namespace(exp_name='test2', run_time=60, prob_internal=0.7, clock_speeds=[2, 3, 2])
