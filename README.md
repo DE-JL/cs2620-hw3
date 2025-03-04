@@ -47,6 +47,7 @@ At the end of each event, the client will log to a file:
 The goal of this application is to observe how clocks drift in distributed systems.
 We will be looking for discrepancies (large jumps) in the system clock time and the logical clock time.
 
+
 ## Usage Instructions
 
 To run the application, open a new terminal and running `python run.py`.
@@ -70,13 +71,22 @@ To start a client, open a new terminal and run `python client.py [CLIENT ADDRESS
 This will start a client process at `<CLIENT ADDRESS>:<CLIENT PORT>`.
 The client will connect to the server and begin sending messages.
 
-### Running Multiple Clients with the Experiment Script
+
+## Experiments
 
 To run the experiment script, open a new terminal and run:
 > `python experiment.py --exp-name [EXPERIMENT NAME] --run-time [RUN TIME]`
 
 The experiment script will start a server process and three client processes and run it for the alloted time in seconds based on the command line arguments fed to the script. The logs will be written to the `./logs/[EXPERIMENT NAME]` directory. The clock speeds can be manually set using the `--clock-speeds` argument (e.g., `--clock-speeds 1 2 3`), by default these are manually generated . One can also dictate the probability of internal events for all the clients using the `--prob-internal` argument. The logs for each client contain a list  of event objects 
 
-
 ### Explanation of Logs
 Inside a logs subfolder inside the `logs/` directory, one can see five files: three json files are for each of the client logs. We also write a `args.json` file which contains the command line arguments used to run the experiment. The `server.log` file contains the server logs.
+
+
+## Testing
+Unit tests can be found in `test_unit.py`.
+To run the tests, open a new terminal and run `python -m pytest test_unit.py`.
+
+This script runs three client-server test cases: one for each type of message that gets sent across processes.
+The test then examines what got sent to the message queue(s) of the receiving client(s) and asserts that the message integrity was preserved.
+We also added unit tests for verifying the correctness of our serialization methods for each of the message objects that we send over the network.
