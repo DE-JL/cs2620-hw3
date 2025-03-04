@@ -4,6 +4,7 @@ import subprocess
 import time
 import random
 import os
+import json
 
 
 def start_server(exp_name):
@@ -71,14 +72,14 @@ def main():
 
     # Start the server
     server_proc = start_server(args.exp_name)
-    time.sleep(2)  # Give the server some time to start
+    time.sleep(5)  # Give the server some time to start
 
     # write experiment config in logs/args.exp_name
-    log_file_path = f"logs/{args.exp_name}/args.txt"
+    log_file_path = f"logs/{args.exp_name}/args.json"
 
     os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
     with open(log_file_path, "w") as f:
-        f.write(str(args))
+        json.dump(vars(args), f, indent=4)
 
     # Start the clients
     client_procs = [start_client(ports[idx], args.exp_name, speed, args.prob_internal) for idx, speed in

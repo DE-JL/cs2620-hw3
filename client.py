@@ -172,12 +172,14 @@ class Client:
         self.events.append(Event(event_type="SEND",
                                  system_clock_time=time.time(),
                                  logical_clock_time=self.logical_clock,
+                                 message_queue_size=self.network_queue.qsize(),
                                  message=message))
 
     def log_internal(self):
         self.events.append(Event(event_type="INTERNAL",
                                  system_clock_time=time.time(),
-                                 logical_clock_time=self.logical_clock))
+                                 logical_clock_time=self.logical_clock,
+                                 message_queue_size=self.network_queue.qsize()))
 
 
 def positive_int(value):
