@@ -50,6 +50,7 @@ class Client:
 
         # Bind and connect the client socket
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.client_socket.bind((client_addr, client_port))
         self.client_socket.connect((SERVER_ADDR, SERVER_PORT))
 
@@ -83,6 +84,9 @@ class Client:
         self.stop_event.set()
         self.listener_thread.join()
         self.worker_thread.join()
+
+        # Close the socket
+        self.client_socket.close()
 
         # Take a dump
         json.dump([event.model_dump() for event in self.events],

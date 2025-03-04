@@ -2,6 +2,7 @@ import argparse
 import os
 import selectors
 import socket
+import threading
 import types
 
 from config import SERVER_ADDR, SERVER_PORT
@@ -28,6 +29,9 @@ class Server:
         os.makedirs(os.path.dirname(server_log_file_path), exist_ok=True)
         self.server_log = open(server_log_file_path, "w")
 
+        # Stop signal
+        self.stop_event = threading.Event()
+
     def run(self, server_addr: str, server_port: int):
         # Bind and listen on <host:port>
         self.server_socket.bind((server_addr, server_port))
@@ -37,7 +41,7 @@ class Server:
         # Register the socket
         self.sel.register(self.server_socket, selectors.EVENT_READ, None)
         try:
-            while True:
+            while not self.stop_event.is_set():
                 events = self.sel.select(timeout=None)
                 for key, mask in events:
                     if key.data is None:
@@ -47,9 +51,13 @@ class Server:
         except KeyboardInterrupt:
             print("Caught keyboard interrupt, exiting.")
         finally:
-            self.sel.close()
-            self.server_socket.close()
-            self.server_log.close()
+            self.stop()
+
+    def stop(self):
+        self.stop_event.set()
+        self.sel.close()
+        self.server_socket.close()
+        self.server_log.close()
 
     def accept_wrapper(self, key: selectors.SelectorKey):
         """

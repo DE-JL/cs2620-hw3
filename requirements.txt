@@ -1,6 +1,5 @@
-PyYAML~=6.0.2
-pydantic~=2.10.6
-ipympl~=0.9.6
-numpy~=2.2.3
-jupyterlab~=4.3.5
 matplotlib~=3.10.1
+numpy~=2.2.3
+pydantic~=2.10.6
+pytest~=8.3.5
+PyYAML~=6.0.2

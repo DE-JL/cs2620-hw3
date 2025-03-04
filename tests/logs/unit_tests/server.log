@@ -1,0 +1,3 @@
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=0.0 logical_clock_time=0 payload=''
+
