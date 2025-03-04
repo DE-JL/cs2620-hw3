@@ -1,0 +1,3132 @@
+[
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054170.3504572,
+        "logical_clock_time": 1,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054170.348765,
+            "logical_clock_time": 1,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054170.5221708,
+        "logical_clock_time": 2,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054170.348764,
+            "logical_clock_time": 1,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054170.693871,
+        "logical_clock_time": 3,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054170.8655732,
+        "logical_clock_time": 4,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054171.035697,
+        "logical_clock_time": 5,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054171.207508,
+        "logical_clock_time": 6,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054171.207433,
+            "logical_clock_time": 6,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054171.379235,
+        "logical_clock_time": 7,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054171.3792,
+            "logical_clock_time": 7,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054171.550934,
+        "logical_clock_time": 8,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054171.7199411,
+        "logical_clock_time": 9,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054171.889973,
+        "logical_clock_time": 10,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054172.0616891,
+        "logical_clock_time": 11,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054172.228529,
+        "logical_clock_time": 12,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054172.400246,
+        "logical_clock_time": 13,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054172.3611898,
+            "logical_clock_time": 9,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054172.570094,
+        "logical_clock_time": 14,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054172.7409012,
+        "logical_clock_time": 15,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054172.740839,
+            "logical_clock_time": 15,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054172.912609,
+        "logical_clock_time": 16,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054173.084171,
+        "logical_clock_time": 17,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054173.256026,
+        "logical_clock_time": 18,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054173.25597,
+            "logical_clock_time": 18,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054173.427718,
+        "logical_clock_time": 19,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054173.599416,
+        "logical_clock_time": 20,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054173.769255,
+        "logical_clock_time": 21,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054173.940953,
+        "logical_clock_time": 22,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054173.8763368,
+            "logical_clock_time": 18,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054174.109462,
+        "logical_clock_time": 23,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054174.278275,
+        "logical_clock_time": 24,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054174.4500248,
+        "logical_clock_time": 25,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054174.4499788,
+            "logical_clock_time": 25,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054174.621711,
+        "logical_clock_time": 26,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054174.793202,
+        "logical_clock_time": 27,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054174.964896,
+        "logical_clock_time": 28,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054175.1356008,
+        "logical_clock_time": 29,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054175.307185,
+        "logical_clock_time": 30,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054175.476641,
+        "logical_clock_time": 31,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054175.648333,
+        "logical_clock_time": 32,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054175.82004,
+        "logical_clock_time": 33,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054175.9917388,
+        "logical_clock_time": 34,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054175.891815,
+            "logical_clock_time": 25,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054176.163517,
+        "logical_clock_time": 35,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054176.163444,
+            "logical_clock_time": 35,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054176.3350809,
+        "logical_clock_time": 36,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054176.506788,
+        "logical_clock_time": 37,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054176.67762,
+        "logical_clock_time": 38,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054176.8465998,
+        "logical_clock_time": 39,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054177.0182998,
+        "logical_clock_time": 40,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054177.189999,
+        "logical_clock_time": 41,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054177.358146,
+        "logical_clock_time": 42,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054177.358094,
+            "logical_clock_time": 42,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054177.52612,
+        "logical_clock_time": 43,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054177.405395,
+            "logical_clock_time": 31,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054177.697818,
+        "logical_clock_time": 44,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054177.869536,
+        "logical_clock_time": 45,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054178.041236,
+        "logical_clock_time": 46,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054177.908638,
+            "logical_clock_time": 32,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054178.212107,
+        "logical_clock_time": 47,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054178.3817248,
+        "logical_clock_time": 48,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054178.551202,
+        "logical_clock_time": 49,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054178.413724,
+            "logical_clock_time": 33,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054178.71797,
+        "logical_clock_time": 50,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054178.7179232,
+            "logical_clock_time": 50,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054178.88508,
+        "logical_clock_time": 51,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054179.05196,
+        "logical_clock_time": 52,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054179.051918,
+            "logical_clock_time": 52,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054179.223666,
+        "logical_clock_time": 53,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054179.395372,
+        "logical_clock_time": 54,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054179.5670779,
+        "logical_clock_time": 55,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054179.423846,
+            "logical_clock_time": 52,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054179.734208,
+        "logical_clock_time": 56,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054179.901702,
+        "logical_clock_time": 57,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054180.070443,
+        "logical_clock_time": 58,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054180.238861,
+        "logical_clock_time": 59,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054180.406028,
+        "logical_clock_time": 60,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054180.4059699,
+            "logical_clock_time": 60,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054180.577728,
+        "logical_clock_time": 61,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054180.7494788,
+        "logical_clock_time": 62,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054180.749425,
+            "logical_clock_time": 62,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054180.921163,
+        "logical_clock_time": 63,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054181.092858,
+        "logical_clock_time": 64,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054181.262744,
+        "logical_clock_time": 65,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054181.262707,
+            "logical_clock_time": 65,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054181.4344268,
+        "logical_clock_time": 66,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054181.606158,
+        "logical_clock_time": 67,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054181.606118,
+            "logical_clock_time": 67,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054181.773621,
+        "logical_clock_time": 68,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054181.940712,
+        "logical_clock_time": 69,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054182.109768,
+        "logical_clock_time": 70,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054182.109712,
+            "logical_clock_time": 70,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054182.27761,
+        "logical_clock_time": 71,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054182.4492958,
+        "logical_clock_time": 72,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054182.620998,
+        "logical_clock_time": 73,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054182.792702,
+        "logical_clock_time": 74,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054182.964395,
+        "logical_clock_time": 75,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054183.1361558,
+        "logical_clock_time": 76,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054183.136096,
+            "logical_clock_time": 76,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054183.3077629,
+        "logical_clock_time": 77,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054183.307729,
+            "logical_clock_time": 77,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054183.4768372,
+        "logical_clock_time": 78,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054183.646364,
+        "logical_clock_time": 79,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054183.646323,
+            "logical_clock_time": 79,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054183.813768,
+        "logical_clock_time": 80,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054183.98162,
+        "logical_clock_time": 81,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054184.1533718,
+        "logical_clock_time": 82,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054184.153319,
+            "logical_clock_time": 82,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054184.3235772,
+        "logical_clock_time": 83,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054184.493561,
+        "logical_clock_time": 84,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054184.493516,
+            "logical_clock_time": 84,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054184.661823,
+        "logical_clock_time": 85,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054184.833577,
+        "logical_clock_time": 86,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054184.833523,
+            "logical_clock_time": 86,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054185.0052679,
+        "logical_clock_time": 87,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054185.173663,
+        "logical_clock_time": 88,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054185.341119,
+        "logical_clock_time": 89,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054185.512904,
+        "logical_clock_time": 90,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054185.512846,
+            "logical_clock_time": 90,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054185.6846468,
+        "logical_clock_time": 91,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054185.684604,
+            "logical_clock_time": 91,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054185.856342,
+        "logical_clock_time": 92,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.02785,
+        "logical_clock_time": 93,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.199553,
+        "logical_clock_time": 94,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.371255,
+        "logical_clock_time": 95,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.542954,
+        "logical_clock_time": 96,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.714669,
+        "logical_clock_time": 97,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054186.8855329,
+        "logical_clock_time": 98,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054187.057246,
+        "logical_clock_time": 99,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054187.2270021,
+        "logical_clock_time": 100,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054187.3962328,
+        "logical_clock_time": 101,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054187.56801,
+        "logical_clock_time": 102,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054187.567946,
+            "logical_clock_time": 102,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054187.739695,
+        "logical_clock_time": 103,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054187.908442,
+        "logical_clock_time": 104,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054187.908395,
+            "logical_clock_time": 104,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054188.080145,
+        "logical_clock_time": 105,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054188.251849,
+        "logical_clock_time": 106,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054188.4230158,
+        "logical_clock_time": 107,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054188.5947268,
+        "logical_clock_time": 108,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054188.502233,
+            "logical_clock_time": 106,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054188.763127,
+        "logical_clock_time": 109,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054188.934863,
+        "logical_clock_time": 110,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054189.106475,
+        "logical_clock_time": 111,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054189.277405,
+        "logical_clock_time": 112,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054189.449124,
+        "logical_clock_time": 113,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054189.615998,
+        "logical_clock_time": 114,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054189.615916,
+            "logical_clock_time": 114,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054189.787253,
+        "logical_clock_time": 115,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054189.958967,
+        "logical_clock_time": 116,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054190.125813,
+        "logical_clock_time": 117,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054190.0143301,
+            "logical_clock_time": 109,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054190.292704,
+        "logical_clock_time": 118,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054190.462773,
+        "logical_clock_time": 119,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054190.634502,
+        "logical_clock_time": 120,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054190.806237,
+        "logical_clock_time": 121,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054190.9779499,
+        "logical_clock_time": 122,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054191.149737,
+        "logical_clock_time": 123,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054191.1496692,
+            "logical_clock_time": 123,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054191.32144,
+        "logical_clock_time": 124,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054191.493153,
+        "logical_clock_time": 125,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054191.663646,
+        "logical_clock_time": 126,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054191.835041,
+        "logical_clock_time": 127,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054192.006815,
+        "logical_clock_time": 128,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054192.17392,
+        "logical_clock_time": 129,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054192.021495,
+            "logical_clock_time": 125,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054192.345772,
+        "logical_clock_time": 130,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054192.34566,
+            "logical_clock_time": 130,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054192.513925,
+        "logical_clock_time": 131,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054192.685656,
+        "logical_clock_time": 132,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054192.853983,
+        "logical_clock_time": 133,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054192.853908,
+            "logical_clock_time": 133,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054193.0241148,
+        "logical_clock_time": 134,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054193.0240169,
+            "logical_clock_time": 134,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054193.1919239,
+        "logical_clock_time": 135,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054193.363765,
+        "logical_clock_time": 136,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054193.533631,
+        "logical_clock_time": 137,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054193.704171,
+        "logical_clock_time": 138,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054193.704072,
+            "logical_clock_time": 138,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054193.875896,
+        "logical_clock_time": 139,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054194.044058,
+        "logical_clock_time": 140,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054194.0439239,
+            "logical_clock_time": 140,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054194.215769,
+        "logical_clock_time": 141,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054194.387211,
+        "logical_clock_time": 142,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054194.387109,
+            "logical_clock_time": 142,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054194.558882,
+        "logical_clock_time": 143,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054194.5359092,
+            "logical_clock_time": 140,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054194.730618,
+        "logical_clock_time": 144,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054194.901223,
+        "logical_clock_time": 145,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054195.069258,
+        "logical_clock_time": 146,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054195.2409542,
+        "logical_clock_time": 147,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054195.412671,
+        "logical_clock_time": 148,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054195.584476,
+        "logical_clock_time": 149,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054195.584388,
+            "logical_clock_time": 149,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054195.7562208,
+        "logical_clock_time": 150,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054195.756175,
+            "logical_clock_time": 150,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054195.9257002,
+        "logical_clock_time": 151,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054196.0974789,
+        "logical_clock_time": 152,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054196.097419,
+            "logical_clock_time": 152,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054196.2691772,
+        "logical_clock_time": 153,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054196.441037,
+        "logical_clock_time": 154,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054196.44092,
+            "logical_clock_time": 154,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054196.6127439,
+        "logical_clock_time": 155,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054196.784456,
+        "logical_clock_time": 156,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054196.956167,
+        "logical_clock_time": 157,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054197.126176,
+        "logical_clock_time": 158,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054197.297887,
+        "logical_clock_time": 159,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054197.467319,
+        "logical_clock_time": 160,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054197.467204,
+            "logical_clock_time": 160,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054197.638551,
+        "logical_clock_time": 161,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054197.810279,
+        "logical_clock_time": 162,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054197.9786391,
+        "logical_clock_time": 163,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054198.150342,
+        "logical_clock_time": 164,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054198.317396,
+        "logical_clock_time": 165,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054198.489114,
+        "logical_clock_time": 166,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054198.66083,
+        "logical_clock_time": 167,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054198.8325608,
+        "logical_clock_time": 168,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.001157,
+        "logical_clock_time": 169,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.1680582,
+        "logical_clock_time": 170,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.339818,
+        "logical_clock_time": 171,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.509821,
+        "logical_clock_time": 172,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.681542,
+        "logical_clock_time": 173,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054199.850966,
+        "logical_clock_time": 174,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054200.022672,
+        "logical_clock_time": 175,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054200.1895401,
+        "logical_clock_time": 176,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054200.094839,
+            "logical_clock_time": 166,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054200.3612611,
+        "logical_clock_time": 177,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054200.533057,
+        "logical_clock_time": 178,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054200.53297,
+            "logical_clock_time": 178,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054200.702838,
+        "logical_clock_time": 179,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054200.702763,
+            "logical_clock_time": 179,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054200.873118,
+        "logical_clock_time": 180,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054201.044916,
+        "logical_clock_time": 181,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054201.0448482,
+            "logical_clock_time": 181,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054201.213902,
+        "logical_clock_time": 182,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054201.3856351,
+        "logical_clock_time": 183,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054201.555656,
+        "logical_clock_time": 184,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054201.5555358,
+            "logical_clock_time": 184,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054201.727369,
+        "logical_clock_time": 185,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054201.8968372,
+        "logical_clock_time": 186,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054201.896737,
+            "logical_clock_time": 186,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054202.068587,
+        "logical_clock_time": 187,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054202.2403042,
+        "logical_clock_time": 188,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054202.10699,
+            "logical_clock_time": 186,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054202.412025,
+        "logical_clock_time": 189,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054202.58203,
+        "logical_clock_time": 190,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054202.75382,
+        "logical_clock_time": 191,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054202.925477,
+        "logical_clock_time": 192,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054203.0924742,
+        "logical_clock_time": 193,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054203.2613919,
+        "logical_clock_time": 194,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054203.261255,
+            "logical_clock_time": 194,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054203.4301372,
+        "logical_clock_time": 195,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054203.601849,
+        "logical_clock_time": 196,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054203.772119,
+        "logical_clock_time": 197,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054203.943861,
+        "logical_clock_time": 198,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054204.115655,
+        "logical_clock_time": 199,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054204.1155882,
+            "logical_clock_time": 199,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054204.285789,
+        "logical_clock_time": 200,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054204.2857091,
+            "logical_clock_time": 200,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054204.454425,
+        "logical_clock_time": 201,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054204.621748,
+        "logical_clock_time": 202,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054204.793515,
+        "logical_clock_time": 203,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054204.7934542,
+            "logical_clock_time": 203,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054204.965229,
+        "logical_clock_time": 204,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054205.135606,
+        "logical_clock_time": 205,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054205.13059,
+            "logical_clock_time": 202,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054205.307334,
+        "logical_clock_time": 206,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054205.4748092,
+        "logical_clock_time": 207,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054205.644704,
+        "logical_clock_time": 208,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054205.635802,
+            "logical_clock_time": 203,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054205.8164291,
+        "logical_clock_time": 209,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054205.984797,
+        "logical_clock_time": 210,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054206.156569,
+        "logical_clock_time": 211,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054206.118231,
+            "logical_clock_time": 206,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054206.328491,
+        "logical_clock_time": 212,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054206.328298,
+            "logical_clock_time": 212,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054206.500187,
+        "logical_clock_time": 213,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054206.668808,
+        "logical_clock_time": 214,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054206.837715,
+        "logical_clock_time": 215,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054207.009422,
+        "logical_clock_time": 216,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054207.179165,
+        "logical_clock_time": 217,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054207.349869,
+        "logical_clock_time": 218,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054207.5215738,
+        "logical_clock_time": 219,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054207.693009,
+        "logical_clock_time": 220,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054207.86481,
+        "logical_clock_time": 221,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054207.864748,
+            "logical_clock_time": 221,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054208.036513,
+        "logical_clock_time": 222,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054208.203427,
+        "logical_clock_time": 223,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054208.203348,
+            "logical_clock_time": 223,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054208.3724039,
+        "logical_clock_time": 224,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054208.5416498,
+        "logical_clock_time": 225,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054208.541601,
+            "logical_clock_time": 225,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054208.713005,
+        "logical_clock_time": 226,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054208.712926,
+            "logical_clock_time": 226,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054208.884716,
+        "logical_clock_time": 227,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054209.0537448,
+        "logical_clock_time": 228,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054209.225452,
+        "logical_clock_time": 229,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054209.397148,
+        "logical_clock_time": 230,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054209.568835,
+        "logical_clock_time": 231,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054209.73947,
+        "logical_clock_time": 232,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054209.739392,
+            "logical_clock_time": 232,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054209.908486,
+        "logical_clock_time": 233,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054210.0754108,
+        "logical_clock_time": 234,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054210.245982,
+        "logical_clock_time": 235,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054210.245905,
+            "logical_clock_time": 235,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054210.4132779,
+        "logical_clock_time": 236,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054210.413208,
+            "logical_clock_time": 236,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054210.584985,
+        "logical_clock_time": 237,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054210.756785,
+        "logical_clock_time": 238,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054210.756695,
+            "logical_clock_time": 238,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054210.9261298,
+        "logical_clock_time": 239,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054211.0978801,
+        "logical_clock_time": 240,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054211.097837,
+            "logical_clock_time": 240,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054211.269578,
+        "logical_clock_time": 241,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054211.438553,
+        "logical_clock_time": 242,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054211.6102972,
+        "logical_clock_time": 243,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054211.61025,
+            "logical_clock_time": 243,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054211.78,
+        "logical_clock_time": 244,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054211.95179,
+        "logical_clock_time": 245,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054211.9517188,
+            "logical_clock_time": 245,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054212.123561,
+        "logical_clock_time": 246,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054212.123502,
+            "logical_clock_time": 246,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054212.295271,
+        "logical_clock_time": 247,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054212.462355,
+        "logical_clock_time": 248,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054212.634051,
+        "logical_clock_time": 249,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054212.805828,
+        "logical_clock_time": 250,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054212.805771,
+            "logical_clock_time": 250,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054212.9735081,
+        "logical_clock_time": 251,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054212.973438,
+            "logical_clock_time": 251,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054213.145232,
+        "logical_clock_time": 252,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054213.1452,
+            "logical_clock_time": 252,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054213.316913,
+        "logical_clock_time": 253,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054213.488597,
+        "logical_clock_time": 254,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054213.660288,
+        "logical_clock_time": 255,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054213.831983,
+        "logical_clock_time": 256,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.0036669,
+        "logical_clock_time": 257,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.175358,
+        "logical_clock_time": 258,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.347071,
+        "logical_clock_time": 259,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.516651,
+        "logical_clock_time": 260,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.683433,
+        "logical_clock_time": 261,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054214.853893,
+        "logical_clock_time": 262,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054215.0207691,
+        "logical_clock_time": 263,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054215.1900392,
+        "logical_clock_time": 264,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054215.361744,
+        "logical_clock_time": 265,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054215.2032452,
+            "logical_clock_time": 257,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054215.531743,
+        "logical_clock_time": 266,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054215.7001758,
+        "logical_clock_time": 267,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054215.867816,
+        "logical_clock_time": 268,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054216.037641,
+        "logical_clock_time": 269,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054216.209364,
+        "logical_clock_time": 270,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054216.381123,
+        "logical_clock_time": 271,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054216.3810718,
+            "logical_clock_time": 271,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054216.552879,
+        "logical_clock_time": 272,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054216.552825,
+            "logical_clock_time": 272,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054216.724641,
+        "logical_clock_time": 273,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054216.7245839,
+            "logical_clock_time": 273,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054216.896377,
+        "logical_clock_time": 274,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054216.8963358,
+            "logical_clock_time": 274,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054217.0669818,
+        "logical_clock_time": 275,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054217.238716,
+        "logical_clock_time": 276,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054217.410512,
+        "logical_clock_time": 277,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054217.410419,
+            "logical_clock_time": 277,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054217.5822039,
+        "logical_clock_time": 278,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054217.7539132,
+        "logical_clock_time": 279,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054217.924002,
+        "logical_clock_time": 280,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054218.095707,
+        "logical_clock_time": 281,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054218.267424,
+        "logical_clock_time": 282,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054218.438022,
+        "logical_clock_time": 283,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054218.60954,
+        "logical_clock_time": 284,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054218.781261,
+        "logical_clock_time": 285,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054218.707435,
+            "logical_clock_time": 279,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054218.948662,
+        "logical_clock_time": 286,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054219.1154509,
+        "logical_clock_time": 287,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054219.28379,
+        "logical_clock_time": 288,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054219.2084842,
+            "logical_clock_time": 280,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054219.45531,
+        "logical_clock_time": 289,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054219.6270301,
+        "logical_clock_time": 290,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054219.7947168,
+        "logical_clock_time": 291,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054219.963718,
+        "logical_clock_time": 292,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054220.132533,
+        "logical_clock_time": 293,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054220.302088,
+        "logical_clock_time": 294,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054220.473805,
+        "logical_clock_time": 295,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054220.6455228,
+        "logical_clock_time": 296,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054220.817376,
+        "logical_clock_time": 297,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054220.817255,
+            "logical_clock_time": 297,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054220.9891672,
+        "logical_clock_time": 298,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054220.98908,
+            "logical_clock_time": 298,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054221.1603289,
+        "logical_clock_time": 299,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054221.3305118,
+        "logical_clock_time": 300,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054221.33039,
+            "logical_clock_time": 300,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054221.502291,
+        "logical_clock_time": 301,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054221.50222,
+            "logical_clock_time": 301,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054221.669248,
+        "logical_clock_time": 302,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054221.839274,
+        "logical_clock_time": 303,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054222.010586,
+        "logical_clock_time": 304,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054222.010489,
+            "logical_clock_time": 304,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054222.181757,
+        "logical_clock_time": 305,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054222.350543,
+        "logical_clock_time": 306,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054222.3504488,
+            "logical_clock_time": 306,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054222.5207229,
+        "logical_clock_time": 307,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054222.692502,
+        "logical_clock_time": 308,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054222.69239,
+            "logical_clock_time": 308,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054222.8594592,
+        "logical_clock_time": 309,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054223.03003,
+        "logical_clock_time": 310,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054223.02997,
+            "logical_clock_time": 310,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054223.197907,
+        "logical_clock_time": 311,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054223.197836,
+            "logical_clock_time": 311,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054223.366325,
+        "logical_clock_time": 312,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054223.538042,
+        "logical_clock_time": 313,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054223.70925,
+        "logical_clock_time": 314,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054223.880976,
+        "logical_clock_time": 315,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054224.052693,
+        "logical_clock_time": 316,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054224.221069,
+        "logical_clock_time": 317,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054224.220983,
+            "logical_clock_time": 317,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054224.3887842,
+        "logical_clock_time": 318,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054224.560483,
+        "logical_clock_time": 319,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054224.7322009,
+        "logical_clock_time": 320,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054224.904057,
+        "logical_clock_time": 321,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054224.903934,
+            "logical_clock_time": 321,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054225.07581,
+        "logical_clock_time": 322,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054225.075763,
+            "logical_clock_time": 322,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054225.243669,
+        "logical_clock_time": 323,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054225.243624,
+            "logical_clock_time": 323,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054225.413572,
+        "logical_clock_time": 324,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054225.585276,
+        "logical_clock_time": 325,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054225.756989,
+        "logical_clock_time": 326,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054225.9256508,
+        "logical_clock_time": 327,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054225.757301,
+            "logical_clock_time": 325,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.09302,
+        "logical_clock_time": 328,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.262447,
+        "logical_clock_time": 329,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.4341629,
+        "logical_clock_time": 330,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.605876,
+        "logical_clock_time": 331,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.777586,
+        "logical_clock_time": 332,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054226.949291,
+        "logical_clock_time": 333,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054227.121011,
+        "logical_clock_time": 334,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054227.2927182,
+        "logical_clock_time": 335,
+        "message_queue_size": 1,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054227.272563,
+            "logical_clock_time": 328,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054227.459866,
+        "logical_clock_time": 336,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8001",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054227.2844448,
+            "logical_clock_time": 326,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054227.631669,
+        "logical_clock_time": 337,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054227.803425,
+        "logical_clock_time": 338,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054227.975132,
+        "logical_clock_time": 339,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054228.146846,
+        "logical_clock_time": 340,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "RECEIVE",
+        "system_clock_time": 1741054228.315006,
+        "logical_clock_time": 341,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8003",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054228.280504,
+            "logical_clock_time": 330,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054228.4868748,
+        "logical_clock_time": 342,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_FIRST",
+            "system_clock_time": 1741054228.486753,
+            "logical_clock_time": 342,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054228.658584,
+        "logical_clock_time": 343,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054228.830323,
+        "logical_clock_time": 344,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054229.0019,
+        "logical_clock_time": 345,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054229.001806,
+            "logical_clock_time": 345,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054229.173708,
+        "logical_clock_time": 346,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054229.173621,
+            "logical_clock_time": 346,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054229.344198,
+        "logical_clock_time": 347,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054229.344141,
+            "logical_clock_time": 347,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054229.5134468,
+        "logical_clock_time": 348,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "BROADCAST",
+            "system_clock_time": 1741054229.513386,
+            "logical_clock_time": 348,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054229.6803122,
+        "logical_clock_time": 349,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054229.8521988,
+        "logical_clock_time": 350,
+        "message_queue_size": 0,
+        "message": null
+    },
+    {
+        "event_type": "SEND",
+        "system_clock_time": 1741054230.024051,
+        "logical_clock_time": 351,
+        "message_queue_size": 0,
+        "message": {
+            "source": "127.0.0.1:8002",
+            "type": "SEND_SECOND",
+            "system_clock_time": 1741054230.023929,
+            "logical_clock_time": 351,
+            "payload": ""
+        }
+    },
+    {
+        "event_type": "INTERNAL",
+        "system_clock_time": 1741054230.1912582,
+        "logical_clock_time": 352,
+        "message_queue_size": 0,
+        "message": null
+    }
+]

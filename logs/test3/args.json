@@ -1,0 +1,10 @@
+{
+    "exp_name": "test3",
+    "run_time": 60,
+    "prob_internal": 0.7,
+    "clock_speeds": [
+        5,
+        6,
+        4
+    ]
+}

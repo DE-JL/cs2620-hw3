@@ -1,0 +1,300 @@
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054536.8719559 logical_clock_time=1 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054536.871999 logical_clock_time=1 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054537.883206 logical_clock_time=3 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054537.8832052 logical_clock_time=3 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054538.388334 logical_clock_time=5 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054538.888875 logical_clock_time=5 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054539.391264 logical_clock_time=6 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054539.396096 logical_clock_time=7 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054540.4003682 logical_clock_time=9 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054540.905478 logical_clock_time=11 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054541.409615 logical_clock_time=12 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054541.410539 logical_clock_time=11 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054541.915023 logical_clock_time=12 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054541.915023 logical_clock_time=13 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054542.9215171 logical_clock_time=15 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054543.424962 logical_clock_time=17 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054543.930061 logical_clock_time=18 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054544.435161 logical_clock_time=19 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054544.43572 logical_clock_time=20 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054544.935959 logical_clock_time=21 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054545.437821 logical_clock_time=22 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054545.9392278 logical_clock_time=23 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054546.440424 logical_clock_time=24 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054546.945587 logical_clock_time=25 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054546.947315 logical_clock_time=26 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054547.4524941 logical_clock_time=27 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054547.9577868 logical_clock_time=28 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054547.957837 logical_clock_time=29 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054548.4599721 logical_clock_time=29 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054548.965091 logical_clock_time=31 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054549.466288 logical_clock_time=32 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054549.968704 logical_clock_time=33 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054550.471903 logical_clock_time=34 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054550.476094 logical_clock_time=35 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054550.97706 logical_clock_time=35 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054550.9797802 logical_clock_time=36 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054551.48493 logical_clock_time=37 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054551.9867609 logical_clock_time=38 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054552.491584 logical_clock_time=39 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054552.996612 logical_clock_time=40 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054553.497644 logical_clock_time=41 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054554.0022779 logical_clock_time=42 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054554.506038 logical_clock_time=43 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054555.010729 logical_clock_time=44 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054555.0120552 logical_clock_time=45 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054555.5143979 logical_clock_time=46 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054556.0195122 logical_clock_time=47 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054556.5243351 logical_clock_time=48 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054557.027416 logical_clock_time=49 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054557.0306711 logical_clock_time=50 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054557.532392 logical_clock_time=51 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054558.0357811 logical_clock_time=52 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054558.5382028 logical_clock_time=53 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054559.0433578 logical_clock_time=54 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054559.5483809 logical_clock_time=55 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054559.548553 logical_clock_time=55 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054560.556012 logical_clock_time=57 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054561.056843 logical_clock_time=59 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054561.0607748 logical_clock_time=58 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054561.5643468 logical_clock_time=59 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054562.0667021 logical_clock_time=61 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054562.569955 logical_clock_time=62 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054562.578134 logical_clock_time=63 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054563.083245 logical_clock_time=64 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054563.571321 logical_clock_time=65 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054564.074305 logical_clock_time=66 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054564.579405 logical_clock_time=67 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054564.589586 logical_clock_time=67 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054565.091168 logical_clock_time=68 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054565.596271 logical_clock_time=69 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054566.10066 logical_clock_time=70 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054566.6050298 logical_clock_time=71 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054567.10716 logical_clock_time=72 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054567.612243 logical_clock_time=73 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054568.1040168 logical_clock_time=74 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054568.60914 logical_clock_time=75 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054569.113802 logical_clock_time=76 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054569.129719 logical_clock_time=77 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054569.634835 logical_clock_time=78 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054570.121953 logical_clock_time=79 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_FIRST' system_clock_time=1741054570.627051 logical_clock_time=80 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054571.132124 logical_clock_time=81 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054571.63662 logical_clock_time=82 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054571.652298 logical_clock_time=83 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054572.137811 logical_clock_time=83 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054572.642897 logical_clock_time=84 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054573.147692 logical_clock_time=85 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='BROADCAST' system_clock_time=1741054573.652811 logical_clock_time=86 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_SECOND' system_clock_time=1741054574.156949 logical_clock_time=87 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054574.169794 logical_clock_time=88 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054574.674919 logical_clock_time=89 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054575.178255 logical_clock_time=90 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8002' type='SEND_FIRST' system_clock_time=1741054576.172253 logical_clock_time=92 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054576.174401 logical_clock_time=91 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054576.675334 logical_clock_time=92 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='BROADCAST' system_clock_time=1741054576.691205 logical_clock_time=94 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_FIRST' system_clock_time=1741054577.195422 logical_clock_time=95 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='BROADCAST' system_clock_time=1741054577.683019 logical_clock_time=96 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8003' type='SEND_SECOND' system_clock_time=1741054578.18511 logical_clock_time=97 payload=''
+
+---------------- RECEIVED MESSAGE ----------------
+source='127.0.0.1:8001' type='SEND_SECOND' system_clock_time=1741054578.204076 logical_clock_time=98 payload=''
+
